@@ -13,6 +13,20 @@
   margin-left: 1em;
 }
 
+.columns {
+  display: flex;
+}
+
+.search-text {
+  width: 20em;
+}
+
+.deco-checklist {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+
 .decos {
   display: flex;
   gap: 1.5em;
@@ -52,4 +66,57 @@
 .strike {
   text-decoration: line-through;
   color: darkgray;
+}
+
+.monster-holder {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.monster {
+  display: flex;
+  position: relative;
+}
+.monster-img {
+  width: 80px;
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+.outline {
+  color: white;
+  background-color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.crown {
+  position: absolute;
+  font-size: 40px;
+  cursor: pointer;
+
+  /* text-shadow: 1px 1px 0 #FFA700, -1px -1px 0 #FFCB00, 1px -1px 0 #D0A94B, -1px 1px 0 #fff, 3px 3px 5px #aa8e23; */
+
+  /* -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px; */
+}
+.giant {
+  right: -6px;
+  bottom: -2px;
+}
+.mini {
+  transform: scaleY(0.5);
+  right: 31px;
+  bottom: -13px;
+}
+.silver {
+  filter: grayscale(100%);
+}
+.null {
+  filter: contrast(0%);
+}
+
+.mode-button {
+  position: fixed;
+  right: 6px;
+  bottom: 2em;
+  cursor: pointer;
 }
